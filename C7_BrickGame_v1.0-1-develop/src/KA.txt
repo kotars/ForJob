@@ -1,0 +1,37 @@
+https://www.planttext.com/?text=PP5D3i8W48NtSmhM9hq2gOa_SM4qSMbS41qjqT86fbLlRqjBcU9kcEyz7ZFaZfIbfdm1kASsmbOE0SwBYyWoANP6qrQL2A7mtLDlyMsOoW7Kwcqs-j5Ov4IAzKS7GvHuoxvgCJWuagBN7rgq054pf1JwJgCdGKiYTIr61apubvMWcN46fJYgng5_VUgAOqsQD8W1hkTv8jaSXCcJPSSslobKNhn2HxRw3eGTFEm-5I17S-j--mS0
+
+
+@startuml
+
+skin rose
+
+[*] --> InitGame
+InitGame --> StartGame
+
+StartGame --> SpawnFigure
+StartGame -> ExitGame
+
+SpawnFigure --> MoveFigure
+SpawnFigure -> GameOver
+
+MoveFigure --> ShiftFigure
+MoveFigure --> AttachFigure
+
+ShiftFigure --> MoveFigure
+ShiftFigure --> AttachFigure
+ShiftFigure -> PauseGame
+ShiftFigure --> ExitGame
+
+PauseGame --> MoveFigure
+PauseGame -> ExitGame
+
+AttachFigure -> SpawnFigure
+
+GameOver --> StartGame
+GameOver -> ExitGame
+
+ExitGame --> DestroyGame
+
+DestroyGame --> [*]
+
+@enduml

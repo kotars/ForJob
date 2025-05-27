@@ -1,0 +1,22 @@
+Controls
+
+ENTER: Start Game
+
+ESC: End Game
+
+TAB: Pause Game
+
+KEY LEFT: Move Shape Left
+
+KEY RIGHT: Move Shape Right
+
+KEY DOWN: Drop Shape Down
+
+SPASE: Rotate Shape 
+
+Game Rules
+
+The game starts at level 0 and can reach up to level 10. With each new level, the difficulty increases - shapes start falling faster.
+Scoring
+
+Maximum accumulated score is saved after each game.
